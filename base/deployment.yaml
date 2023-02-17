@@ -20,7 +20,7 @@ spec:
         - name: quay-image-pull-secret
       containers:
         - name: dso-demo-java
-          image: quay.apps.ocp4-8.infocepo.com/ministere-interieur-candilib-forge-dso/app-java-forge-dso-demo:912efb0
+          image: quay.apps.ocp4-8.infocepo.com/ministere-interieur-demo-projets-dso-clients/app-java-forge-dso-demo:912efb0
           imagePullPolicy: Always
           env:
             - name: PG_USER
