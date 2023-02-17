@@ -44,7 +44,7 @@ spec:
     spec:
       containers:
         - name: postgres
-          image: postgres:14.5 # Sets Image
+          image: postgres@sha256:d6809f4833ca6caf11a4969a7f41420d3e5fcf26b8c9ca4253c34d5a5fa377cc # Sets Image
           imagePullPolicy: "IfNotPresent"
           ports:
             - containerPort: 5432  # Exposes container port
@@ -57,6 +57,8 @@ spec:
               value: "pg_user"
             - name: "POSTGRES_PASSWORD"
               value: "My$ecrETPAss0rd*"
+            - name: POSTGRES_DB
+              value: demo
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgredb
