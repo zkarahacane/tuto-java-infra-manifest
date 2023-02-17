@@ -7,4 +7,4 @@ resources:
 - service.yaml
 - ingress.yaml
 
-namespace: ministere-interieur-demo-projets-dso-clients-dev
+namespace: ministere-interieur-demo-projets-dso-clients-dso-demo-java-deploy-dev
