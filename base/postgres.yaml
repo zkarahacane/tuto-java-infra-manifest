@@ -49,6 +49,8 @@ spec:
           ports:
             - containerPort: 5432  # Exposes container port
           env:
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
             - name: POSTGRES_DB
               value: "postgresdb"
             - name: "POSTGRES_USER"
@@ -57,12 +59,12 @@ spec:
               value: "My$ecrETPAss0rd*"
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
-              subPath: data
               name: postgredb
           resources:
             limits:
               memory: "512Mi"
               cpu: "500m"
+      restartPolicy: Always
       volumes:
         - name: postgredb
           persistentVolumeClaim:
