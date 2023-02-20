@@ -29,7 +29,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: livre-blanc-transverse-recette
-  name: postgres-lb-recette  # Sets Deployment name
+  name: postgres-demo  # Sets Deployment name
 spec:
   replicas: 1
   strategy:
