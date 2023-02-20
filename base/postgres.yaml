@@ -28,7 +28,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: livre-blanc-transverse-recette
+  namespace: dso-demo-java
   name: postgres-demo  # Sets Deployment name
 spec:
   replicas: 1
