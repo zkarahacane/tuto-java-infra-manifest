@@ -51,10 +51,8 @@ spec:
           env:
             - name: PGDATA
               value: /var/lib/postgresql/data/pgdata
-            - name: POSTGRES_DB
-              value: "postgresdb"
             - name: "POSTGRES_USER"
-              value: "pg_user"
+              value: "demo_user"
             - name: "POSTGRES_PASSWORD"
               value: "My$ecrETPAss0rd*"
             - name: POSTGRES_DB
