@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dso-demo-java
-  namespace: dso-demo-java
   labels:
     app: dso-demo-java
 spec:
