@@ -35,6 +35,9 @@ spec:
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://postgres:5432/postgres
           resources:
+            requests:
+              memory: "512Mi"
+              cpu: "500m"
             limits:
               memory: "512Mi"
               cpu: "500m"
