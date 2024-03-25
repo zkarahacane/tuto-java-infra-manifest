@@ -23,7 +23,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: PG_USER
-              value: "pg_user"
+              value: "userdemomanifest"
             - name: PG_PASSWORD
               value: "My$ecrETPAss0rd*"
             - name: SPRING_DATASOURCE_USERNAME
