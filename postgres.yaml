@@ -13,31 +13,31 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres-manifrest # Sets service name
+  name: postgres-manifest # Sets service name
   labels:
-    app: postgres-manifrest # Labels and Selectors
+    app: postgres-manifest # Labels and Selectors
 spec:
   type: ClusterIP # Sets service type
   ports:
     - port: 5432 # Sets port to run the postgres application
   selector:
-    app: postgres-manifrest
+    app: postgres-manifest
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres-manifrest  # Sets Deployment name
+  name: postgres-manifest  # Sets Deployment name
 spec:
   replicas: 1
   strategy:
     type: Recreate
   selector:
     matchLabels:
-      app: postgres-manifrest
+      app: postgres-manifest
   template:
     metadata:
       labels:
-        app: postgres-manifrest
+        app: postgres-manifest
     spec:
       containers:
         - name: postgres
