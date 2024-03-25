@@ -26,14 +26,12 @@ spec:
               value: "pg_user"
             - name: PG_PASSWORD
               value: "My$ecrETPAss0rd*"
-            - name: MONGO_URL
-              value: mongodb://$(PG_USER):$(PG_PASSWORD)@postgres/postgres
             - name: SPRING_DATASOURCE_USERNAME
               value: $(PG_USER)
             - name: SPRING_DATASOURCE_PASSWORD
               value: $(PG_PASSWORD)
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://postgres:5432/postgres
+              value: jdbc:postgresql://postgres:5432/demo
           resources:
             requests:
               memory: "512Mi"
