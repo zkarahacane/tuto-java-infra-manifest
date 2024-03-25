@@ -16,7 +16,7 @@ spec:
         app: dso-demo-java
     spec:
       imagePullSecrets:
-        - name: quay-image-pull-secret
+        - name: registry-pull-secret
       containers:
         - name: dso-demo-java
           image: harbor.apps.c6.numerique-interieur.com/mi-service-team/app-java-forge-dso-demo:master
