@@ -22,14 +22,14 @@ spec:
           image: harbor.apps.c6.numerique-interieur.com/mi-service-team/app-java-forge-dso-demo:master
           imagePullPolicy: Always
           env:
-            - name: PG_USER
-              value: "userdemomanifest"
-            - name: PG_PASSWORD
-              value: "My$ecrETPAss0rd*"
+#            - name: PG_USER
+#              value: "userdemomanifest"
+#            - name: PG_PASSWORD
+#              value: "My$ecrETPAss0rd*"
             - name: SPRING_DATASOURCE_USERNAME
-              value: $(PG_USER)
+              value: "userdemomanifest"
             - name: SPRING_DATASOURCE_PASSWORD
-              value: $(PG_PASSWORD)
+              value: "My$ecrETPAss0rd*"
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://postgres-manifest:5432/demo
           resources:
