@@ -8,7 +8,7 @@ spec:
     - host: dso-demo-java.dso.numerique-interieur.com
       http:
         paths:
-          - path: /zakari
+          - path: /
             pathType: Prefix
             backend:
               service:
