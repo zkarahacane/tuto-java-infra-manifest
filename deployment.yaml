@@ -22,10 +22,6 @@ spec:
           image: harbor.apps.c6.numerique-interieur.com/mi-certfr/app-java-forge-dso-demo:master
           imagePullPolicy: Always
           env:
-#            - name: PG_USER
-#              value: "userdemomanifest"
-#            - name: PG_PASSWORD
-#              value: "My$ecrETPAss0rd*"
             - name: SPRING_DATASOURCE_USERNAME
               value: "userdemomanifest"
             - name: SPRING_DATASOURCE_PASSWORD
