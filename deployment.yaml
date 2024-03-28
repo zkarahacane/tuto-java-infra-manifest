@@ -19,7 +19,7 @@ spec:
         - name: registry-pull-secret
       containers:
         - name: dso-demo-java
-          image: harbor.apps.c6.numerique-interieur.com/mi-service-team/app-java-forge-dso-demo:master
+          image: harbor.apps.c6.numerique-interieur.com/mi-certfr/app-java-forge-dso-demo:master
           imagePullPolicy: Always
           env:
 #            - name: PG_USER
